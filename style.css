@@ -1,0 +1,15 @@
+@font-face{
+  font-family: black-casper;
+  src: url(fonts/BlackCasper.ttf);
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  margin: auto;
+  width: 1000px;
+}
