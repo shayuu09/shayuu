@@ -1,6 +1,16 @@
-@font-face{
+@font-face {
   font-family: black-casper;
   src: url(fonts/BlackCasper.ttf);
+}
+
+@font-face {
+  font-family: chantal;
+  src: url(fonts/fonnts.com-Chantal_Light.otf);
+}
+
+@font-face {
+  font-family: brands;
+  src: url(fonts/brands.ttf);
 }
 
 .center {
@@ -12,4 +22,65 @@
 body {
   margin: auto;
   width: 1000px;
+  background-image: url(homeimg/SB036.JPG);
+}
+
+h1 {
+  font-family: black-casper;
+  font-size: 50px;
+  color: rgb(50, 50, 70);
+}
+
+h2 {
+  font-family: brands;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: rgb(50, 50, 70);
+}
+
+h3 {
+  font-family: chantal;
+  font-size: 25px;
+  color: rgb(50, 50, 70);
+}
+
+header {
+  position: sticky;
+  padding-left: 1%;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  background-color: rgb(220, 220, 230);
+  border: 3px dashed rgb(50, 50, 70);
+}
+
+header h1, h2, h3 {
+  display: inline;
+}
+
+header h1 {
+  margin-left: 2%;
+  margin-right: 13%;
+  text-decoration: underline overline;
+}
+
+nav {
+  margin-left: 2%;
+}
+
+nav h3{
+  margin-right: 20%;
+  color: rgb(50, 50, 70);
+}
+
+nav h2 {
+  margin-left: 1%;
+}
+
+nav a {
+  margin-left: 11%;
+  text-decoration: none;
+}
+
+#content {
+  background-color: rgb(220, 220, 230);
 }
