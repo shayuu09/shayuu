@@ -160,6 +160,10 @@ nav a {
   /*background-color: white; */
 }
 
+.main .icon {
+  width: 25px;
+}
+
 footer {
   padding-left: 2%;
   padding-bottom: 1%;
