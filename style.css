@@ -26,6 +26,8 @@
 
 body {
   margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
   width: 1000px;
   background-image: url(homeimg/SB036.JPG);
 }
