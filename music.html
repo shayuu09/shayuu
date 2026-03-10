@@ -1,0 +1,154 @@
+<!-- test -->
+<!DOCTYPE html>
+<html lang="EN-ca">
+  <head>
+    <meta charset="UTF-8">
+    <title>me</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Create four equal columns that floats next to eachother */
+      .column {
+        float: left;
+        width: 23%;
+        margin: 1%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <h1>
+        SHAYUU
+      </h1>
+      <img src="headergif/header.gif" alt="fish">
+      <nav>
+        <h3>
+          aka Alex
+        </h3>
+        <a href="index.html"><img src="headergif/home.gif" alt="home">
+          <h2>home</h2>
+        </a>
+        <a href="forms.html"><img src="headergif/forms.gif" alt="home">
+          <h2>forms</h2>
+        </a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            <img src="headergif/me.gif" alt="home">
+            <h2>me</h2>
+          </button>
+          <div class="dropdown-content">
+            <a href="me.html">
+              <h3>about me</h3>
+            </a>
+            <a href="gallery.html">
+              <h3>
+                gallery
+              </h3>
+            </a>
+            <a href="contact.html">
+              <h3>
+                contact
+              </h3>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- content -->
+    <div id="content">
+      <div id="title">
+        <img src="headergif/shark.gif" alt="animated shark">
+        <h1>
+          MUSIC
+        </h1>
+        <img src="headergif/shark.gif" alt="animated shark">
+      </div>
+      <div class="main">
+        <div>
+          <img src="aboutimg/site.gif" alt="site" class="icon">
+          <h2>
+            Under construction
+          </h2>
+          <h3>
+            <br>
+            Check back soon :P
+          </h3>
+        </div>
+        <div>
+          <img src="aboutimg/sharks.gif" alt="another shark">
+        </div>
+      </div>
+
+      <div class="main" style="display:block">
+        <img src="galleryimg/designs.gif" alt="site" class="icon">
+          <h2>
+            faves
+          </h2>
+        <div class="row">
+          <div class="column">
+            <img src="musicimg/cd1.png" style="width:100%" onclick="playMusic(1)" class="cd">
+            <audio class="file" src="https://t4.bcbits.com/stream/773060ad65e9416079e1b7441b07fb80/mp3-128/3825250314?p=0&ts=1773203963&t=ea4bbcf0cde3f10941b0353a39e940067f68b2e4&token=1773203963_3d45108546e01b97ea6debeb09b7e91a74213ff8"></audio>
+          </div>
+          <div class="column">
+            <img src="musicimg/cd2.png" style="width:100%" onclick="playMusic(2)" class="cd">
+            <audio class="file" src="https://t4.bcbits.com/stream/dd11dbe5f9cffb272301d919e0fc0c03/mp3-128/3319885177?p=0&ts=1773203809&t=bd009c41891c12ba11e0a31fa53c3165ac159d99&token=1773203809_10fc9d504512f3f2073b41c5bc9e07e49b460ebc"></audio>
+          </div>
+        </div>
+        
+        <script>
+          let playing = false;
+          let playingi;
+          let cds = document.getElementsByClassName("file");
+        function playMusic(n) {
+          if (playing) {
+            if (n-1 === playingi) {
+              cds[n-1].pause();
+              playing = false;
+            } else {
+              cds[playingi].pause();
+              cds[n-1].play();
+              playingi = n-1;
+            }
+          } else {
+            cds[n-1].play();
+            playing = true;
+            playingi = n-1;
+          }
+        }
+        </script>
+      </div>
+    </div>
+
+
+
+    <!-- footer -->
+    <footer>
+      <img src="headergif/badge.png" alt="site badge">
+      <h1>
+        SHAYUU
+      </h1>
+      <h2>
+        You did it! you reached the bottom!
+      </h2>
+      <div>
+        <h3>
+          fonts used cause i'm not a gatekeeper:
+        </h3>
+        <p>
+          Titles: Black Casper, Headers: Font Awesome 6, Subtitles: Chantal, Body: Informa <br>
+          Built by Alex He in 2025 with <a href="dev.netnet.studio">netnet</a>.
+          Graphics sourced from <a href="https://pixelsea.neocities.org/">PixelSea</a>
+          and <a href="https://www.gifs-paradise.com/">gifsparadise</a>.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
