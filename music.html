@@ -7,18 +7,26 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
     <style>
-
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
+      .cd {
+        margin-top: 2%;
       }
-
-      /* Create four equal columns that floats next to eachother */
-      .column {
-        float: left;
-        width: 23%;
-        margin: 1%;
+      #stack1 {
+        position: relative;
+        right: 14%;
+        z-index:1;
+      }
+      #stack2 {
+        position: relative;
+        right: 28%;
+        z-index: 2;
+      }
+      .playing {
+        animation: play forwards 4s infinite;
+        animation-timing-function: linear;
+      }
+      
+      @keyframes play {
+        100% {transform: rotate(360deg)}
       }
     </style>
   </head>
@@ -91,40 +99,20 @@
         <img src="galleryimg/designs.gif" alt="site" class="icon">
           <h2>
             faves
+            <br>
           </h2>
-        <div class="row">
-          <div class="column">
-            <img src="musicimg/cd1.png" style="width:100%" onclick="playMusic(1)" class="cd">
+        <div>
+            <img src="musicimg/cd1.png" style="width:25%" onclick="playMusic(1);updateAnim(1)" class="cd">
             <audio class="file" src="https://t4.bcbits.com/stream/773060ad65e9416079e1b7441b07fb80/mp3-128/3825250314?p=0&ts=1773203963&t=ea4bbcf0cde3f10941b0353a39e940067f68b2e4&token=1773203963_3d45108546e01b97ea6debeb09b7e91a74213ff8"></audio>
-          </div>
-          <div class="column">
-            <img src="musicimg/cd2.png" style="width:100%" onclick="playMusic(2)" class="cd">
+            <img src="musicimg/cd2.png" style="width:25%" onclick="playMusic(2);updateAnim(2)" class="cd" id="stack1">
             <audio class="file" src="https://t4.bcbits.com/stream/dd11dbe5f9cffb272301d919e0fc0c03/mp3-128/3319885177?p=0&ts=1773203809&t=bd009c41891c12ba11e0a31fa53c3165ac159d99&token=1773203809_10fc9d504512f3f2073b41c5bc9e07e49b460ebc"></audio>
+            <img src="musicimg/cd3.png" style="width:25%" onclick="playMusic(3);updateAnim(3)" class="cd" id="stack2">
+            <audio class="file" src="https://t4.bcbits.com/stream/024956f51f6600922b5ab6e15759eaba/mp3-128/2421684364?p=0&ts=1773209051&t=a07b1e83cdbdf511861bc6bf456159cfa93c041a&token=1773209051_8619c39f7d1c5f322798762f9f9c12cf407684f7"></audio>
           </div>
+          
         </div>
         
-        <script>
-          let playing = false;
-          let playingi;
-          let cds = document.getElementsByClassName("file");
-        function playMusic(n) {
-          if (playing) {
-            if (n-1 === playingi) {
-              cds[n-1].pause();
-              playing = false;
-            } else {
-              cds[playingi].pause();
-              cds[n-1].play();
-              playingi = n-1;
-            }
-          } else {
-            cds[n-1].play();
-            playing = true;
-            playingi = n-1;
-          }
-        }
-        </script>
-      </div>
+        <script src="scripts/audio.js"></script>
     </div>
 
 
