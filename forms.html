@@ -61,11 +61,24 @@
           <h2>
             current form
           </h2>
-           <h3>
-            <br> nothing yet, check back later!
-          </h3>
+          
+          <form action="scripts/send_email.php" method="post">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+            <br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <br>
+
+            <input type="submit" value="Send">
+          </form>
           <p>
-            Maybe you can see what I do by looking at my 
+            Maybe you can see what I do by looking at my
             past forms... just a scroll away! <br>
             <a href="index.html">Back to homepage</a><br>
             <a href="me.html">Who am I even submitting to?</a>
@@ -81,14 +94,14 @@
         </div>
         <div>
           <img src="homeimg/clock.gif" alt="clock" class="icon">
-        <h2>
-          upcoming forms
-        </h2>
+          <h2>
+            upcoming forms
+          </h2>
           <h3>
             <br> nothing yet, check back later!
           </h3>
           <p>
-            Maybe you can see what I do by looking at my 
+            Maybe you can see what I do by looking at my
             past forms... just a scroll away! <br>
             <a href="index.html">Back to homepage</a><br>
             <a href="me.html">Who am I even submitting to?</a>
@@ -102,12 +115,12 @@
             past forms
           </h2>
           <h3>
-            <br>dec 3rd-16th Holiday touchups 
+            <br>dec 3rd-16th Holiday touchups
           </h3>
           <p>
-            Instead of buying a new wardrobe, reuse what 
+            Instead of buying a new wardrobe, reuse what
             you've got by sending it my way! Whether you
-            want it off your hands or made into something 
+            want it off your hands or made into something
             new, now's the time to bring fashion to the
             holidays.
           </p>
@@ -116,7 +129,7 @@
           </h3>
           <p>
             Submission period: December 3rd-16th <br>
-            Pickup/Reception locations: University of Waterloo campus 
+            Pickup/Reception locations: University of Waterloo campus
             (Waterloo), Union Station (Toronto) <br>
           </p>
           <h3>
@@ -125,7 +138,7 @@
           <p>
             Completion times will vary. Everyone who submits
             will be contacted when their piece has finished!
-            All submitters can choose to keep or receive 
+            All submitters can choose to keep or receive
             their item back.
           </p>
         </div>
@@ -149,11 +162,12 @@
         </h3>
         <p>
           Titles: Black Casper, Headers: Font Awesome 6, Subtitles: Chantal, Body: Informa <br>
-          Built by Alex He in 2025 with <a href="dev.netnet.studio">netnet</a>. 
+          Built by Alex He in 2025 with <a href="dev.netnet.studio">netnet</a>.
           Graphics sourced from <a href="https://pixelsea.neocities.org/">PixelSea</a>
           and <a href="https://www.gifs-paradise.com/">gifsparadise</a>.
         </p>
       </div>
     </footer>
+    
   </body>
 </html>
