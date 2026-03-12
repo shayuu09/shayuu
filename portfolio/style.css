@@ -1,0 +1,228 @@
+@font-face {
+  font-family: black-casper;
+  src: url(fonts/BlackCasper.ttf);
+}
+
+@font-face {
+  font-family: chantal;
+  src: url(fonts/fonnts.com-Chantal_Light.otf);
+}
+
+@font-face {
+  font-family: brands;
+  src: url(fonts/brands.ttf);
+}
+
+@font-face {
+  font-family: informa;
+  src: url(fonts/fonnts.com-Informa_Pro.otf);
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 1000px;
+  background-image: url(homeimg/SB036.JPG);
+}
+
+h1 {
+  font-family: black-casper;
+  font-size: 50px;
+  color: rgb(50, 50, 70);
+}
+
+h2 {
+  font-family: brands;
+  font-size: 30px;
+  letter-spacing: 1px;
+  color: rgb(50, 50, 70);
+}
+
+h3 {
+  font-family: chantal;
+  font-size: 25px;
+  margin-top: 1%;
+  color: rgb(50, 50, 70);
+}
+
+p {
+  font-family: informa;
+  font-size: 20px;
+  margin-top: 0px;
+  color: rgb(50, 50, 70);
+}
+
+a {
+  color: rgb(80, 90, 120);
+}
+
+a:hover {
+  background: url(sharkie.gif);
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  padding-left: 1%;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  background-color: rgb(220, 220, 230);
+  outline: 3px dashed rgb(50, 50, 70);
+}
+
+header h1, h2, h3 {
+  display: inline;
+}
+
+header h1 {
+  margin-left: 2%;
+  margin-right: 13%;
+  text-decoration: underline overline;
+}
+
+nav {
+  margin-left: 2%;
+}
+
+nav h3{
+  margin-right: 20%;
+  color: rgb(50, 50, 70);
+}
+
+nav h2 {
+  margin-left: 1%;
+  font-size: 20px;
+}
+
+nav a {
+  margin-left: 11%;
+  text-decoration: none;
+}
+
+#banner {
+  margin-left: -2%;
+  margin-top: 2%;
+}
+
+#banner img {
+  width: 102%;
+}
+
+#content {
+  margin-top: -35px;
+  padding: 2%;
+  background-color: rgb(205, 205, 220);
+  outline: 3px dashed rgb(50, 50, 70);
+}
+
+#title {
+  margin-top: 3%;
+  padding: 1%;
+  border: 3px dashed rgb(50, 50, 70);
+  background-color: rgb(220, 220, 230);
+}
+
+#title h1 {
+  display: inline;
+}
+
+#events {
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns: 47.5% 47.5%;
+  gap: 5%;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 47.5% 47.5%;
+  gap: 5%;
+  padding: 2.5%;
+  margin-top: 2%;
+  border: 3px dashed rgb(50, 50, 70);
+  background-color: rgb(220, 220, 230);
+}
+
+.main img {
+  width: 100%;
+}
+
+.cbox {
+  padding: 5%;
+  padding-bottom: 1%;
+  border: 3px dashed rgb(50, 50, 70);
+  background-color: rgb(220, 220, 230);
+  /*background-color: white; */
+}
+
+.main .icon {
+  width: 25px;
+}
+
+/* From w3schools */
+/* Dropdown Button */
+.dropbtn {
+  background-color: rgb(220, 220, 230);
+  border: none;
+  width: 170px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  margin-left: 5%;
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(220, 220, 230);
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  margin: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+footer {
+  padding-left: 2%;
+  padding-bottom: 1%;
+  padding-top: 2%;
+  background-color: rgb(220, 220, 230);
+  outline: 3px dashed rgb(50, 50, 70);
+}
+
+footer h1 {
+  margin-left: 2%;
+  margin-right: 17%;
+  text-decoration: underline overline;
+}
+
+footer h2 {
+  font-size: 20px;
+}
+
+footer h1, h2, h3 {
+  display: inline;
+}
