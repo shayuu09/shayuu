@@ -9,15 +9,24 @@
     <style>
       .cd {
         margin-top: 2%;
-        margin-right: -95px; 
+        margin-right: -95px;
       }
+      
+      .tlist {
+        display:grid;
+        grid-template-columns: 45% 45%;
+        gap: 10%;
+      }
+
       .playing {
         animation: play forwards 4s infinite;
         animation-timing-function: linear;
       }
-      
+
       @keyframes play {
-        100% {transform: rotate(360deg)}
+        100% {
+          transform: rotate(360deg)
+        }
       }
     </style>
   </head>
@@ -51,11 +60,11 @@
               <h3>
                 gallery
               </h3>
-            <a href="portfolio.html">
-              <h3>
-                Portfolio
-              </h3>
-            </a>
+              <a href="portfolio.html">
+                <h3>
+                  Portfolio
+                </h3>
+              </a>
             </a>
             <a href="contact.html">
               <h3>
@@ -93,44 +102,54 @@
 
       <div class="main" style="display:block">
         <img src="galleryimg/designs.gif" alt="site" class="icon">
-          <h2>
-            faves
-            <br>
-          </h2>
-            <img src="musicimg/cd1.png" style="width:25%" onclick="playMusic(1);updateAnim(1)" class="cd">
-            <audio class="file" src="musicimg/kinoue64.mp3"></audio>
-            <img src="musicimg/cd2.png" style="width:25%; position: relative; z-index:1" onclick="playMusic(2);updateAnim(2)" class="cd">
-            <audio class="file" src=""></audio>
-            <img src="musicimg/cd3.png" style="width:25%; position: relative; z-index:2" onclick="playMusic(3);updateAnim(3)" class="cd">
-            <audio class="file" src=""></audio>
-            <img src="musicimg/cd4.png" style="width:25%; position: relative; z-index:3" onclick="playMusic(4);updateAnim(4)" class="cd">
-            <audio class="file" src=""></audio>
-            <img src="musicimg/cd5.png" style="width:25%; position: relative; z-index:4" onclick="playMusic(5);updateAnim(5)" class="cd">
-            <audio class="file" src="musicimg/cooya.mp3"></audio>
-            <img src="musicimg/cd6.png" style="width:25%; position: relative; z-index:5" onclick="playMusic(6);updateAnim(6)" class="cd">
-            <audio class="file" src="musicimg/theophant.mp3"></audio>
-      
-        <script src="scripts/audio.js"></script>
-        <div>
         <h2>
-          Tracklist
+          faves
           <br>
         </h2>
-        <h3>
-          <a>1. 放課後、通学路。by kinoue64</a>
-          <br>
-          <a>2. 迷航（全长版）by 哲学思潮</a>
-          <br>
-          <a>3. When They Call by The Hue of Two</a>
-        </h3>
-        </div>
+        <img src="musicimg/cd1.png" style="width:25%" onclick="playMusic(1);updateAnim(1)" class="cd">
+        <audio class="file" src="musicimg/kinoue64.mp3"></audio>
+        <img src="musicimg/cd2.png" style="width:25%; position: relative; z-index:1" onclick="playMusic(2);updateAnim(2)" class="cd">
+        <audio class="file" src="musicimg/dazedtrek.mp3"></audio>
+        <img src="musicimg/cd3.png" style="width:25%; position: relative; z-index:2" onclick="playMusic(3);updateAnim(3)" class="cd">
+        <audio class="file" src="musicimg/hueof2.mp3"></audio>
+        <img src="musicimg/cd4.png" style="width:25%; position: relative; z-index:3" onclick="playMusic(4);updateAnim(4)" class="cd">
+        <audio class="file" src="musicimg/callthedogs.mp3"></audio>
+        <img src="musicimg/cd5.png" style="width:25%; position: relative; z-index:4" onclick="playMusic(5);updateAnim(5)" class="cd">
+        <audio class="file" src="musicimg/cooya.mp3"></audio>
+        <img src="musicimg/cd6.png" style="width:25%; position: relative; z-index:5" onclick="playMusic(6);updateAnim(6)" class="cd">
+        <audio class="file" src="musicimg/theophant.mp3"></audio>
+
+        <script src="scripts/audio.js"></script>
         <div>
-          <h3>
-            <a>4. Call The Dogs Out by The Garden</a>
-          </h3>
+          <h2>
+            Tracklist
+            <br>
+          </h2>
+          <div class="tlist">
+            <div>
+
+              <h3>
+                <a href="https://kinoue64.bandcamp.com/track/--150">1. 放課後、通学路。by kinoue64</a>
+                <br>
+                <a href="https://zxsc.bandcamp.com/track/-">2. 迷航（全长版）by 哲学思潮</a>
+                <br>
+                <a href="https://danieldanger.bandcamp.com/track/and-when-they-call">3. When They Call by The Hue of Two</a>
+              </h3>
+            </div>
+            <div>
+              
+              <h3>
+                <a href="https://thegardenmusic.bandcamp.com/track/call-the-dogs-out">4. Call the dogs out by the garden</a>
+                <br>
+                <a href="http://www.coo-ya.com/discography/jou_en/index.html">5. ケティ by 空夜coo:ya</a>
+                <br>
+                <a href="https://sunispoison.bandcamp.com/track/theophant">6. Theophant by sun is poison</a>
+              </h3>
+            </div>
+          </div>
         </div>
       </div>
-        
+
     </div>
 
 
