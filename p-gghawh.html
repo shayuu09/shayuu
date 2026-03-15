@@ -5,6 +5,122 @@
     <title>portfolio</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
+    
+    <style>
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Create four equal columns that floats next to eachother */
+      .column {
+        float: left;
+        width: 50%;
+        margin-bottom: 1%;
+      }
+
+      /* The Modal (background) */
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-image: url(homeimg/SB036.JPG);
+      }
+
+      /* Modal Content */
+      .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        width: 50%;
+        max-width: 50%;
+      }
+
+      /* The Close Button */
+      .close {
+        color: black;
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 65px;
+        font-weight: bold;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #999;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      /* Hide the slides by default */
+      .mySlides {
+        display: none;
+      }
+
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-image: url(homeimg/SB036.JPG);
+      }
+
+      /* Caption text */
+      .caption-container {
+        text-align: center;
+        padding: 10px 16px;
+        background-color: rgb(220, 220, 230);
+      }
+
+      img.demo {
+        opacity: 0.6;
+      }
+
+      .active,
+      .demo:hover {
+        opacity: 1;
+      }
+
+      img.hover-shadow {
+        transition: 0.3s;
+      }
+
+      .hover-shadow:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+    </style>
   </head>
   <body>
     <!-- header -->
@@ -66,20 +182,167 @@
       
       <div class="main">
         <div>
-          <img src="aboutimg/site.gif" alt="site" class="icon">
+          <img alt="cd" class="icon" src="aboutimg/cd.gif">
           <h2>
-            Under construction
+            God Gave Him a Wolf's Heart
+            <br>
           </h2>
           <h3>
-            <br>
-            Check back soon :P
+            Conception
           </h3>
+          <p>
+            <a href="https://sunispoison.bandcamp.com/album/god-gave-him-a-wolfs-heart-outtakes-2022">
+              God Gave Him A Wolf's Heart
+            </a>
+            by sun is poison is 
+            probably one of (if not) my favourite albums in 
+            the world, but there are no physical copies of it in
+            existence. I designed this version to imagine what a
+            CD case for the album would look like. This is not an
+            official design.
+          </p>
+          <h3>
+            Development
+          </h3>
+          <p>
+            One issue I ran into was the actual visuals on the
+            case: did I want to keep the original cover image 
+            or did I want to make my own? I decided to "hide"
+            the original image in several parts of the design,
+            see if you can spot it!
+            <br>
+            I felt the imagery should be literal, so I added an
+            anatomical heart and a wolf into the design. I also
+            wanted an inversion effect, sort of like an x-ray.
+            This way it could be like an "x-ray" into "his"
+            wolf heart.
+          </p>
+          <h3>
+            final touches
+          </h3>
+          <p>
+            To add that final flair, I added in the lyrics of
+            each song onto each portion of the design. I used
+            a font called "Redacted Script" to achieve the 
+            effect of small cursive.
+            <br>
+            Overall, I'm pretty proud!
+          </p>
+          <a href="music.html">
+            <h3>
+              More music i like
+            </h3>
+          </a>
         </div>
         <div>
-          <img src="aboutimg/sharks.gif" alt="another shark">
+          <img alt="inner poster" src="galleryimg/des3.png" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+          <p>
+            <br>
+            <em>Inner poster that comes with the jewel case. This 
+              would be on the flip side of the cover itself, which 
+              would be folded and act as the cover.</em>
+          </p>
         </div>
       </div>
+      
+      <div class="main" style="display:inline-block">
+        <div class="row">
+          <div>
+          <h3>
+            outer covers
+          </h3>
+          </div>
+          <div class="column">
+            <img src="portfolio/gghawh/cover.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="portfolio/gghawh/back.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+          </div>
+          <div>
+            <h3>
+            Inner covers
+          </h3>
+          </div>
+          
+          <div class="column">
+            <img src="portfolio/gghawh/innercover.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="portfolio/gghawh/innerback.png" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+          </div>
+          <div>
+            <h3>
+            Cover unfolded
+          </h3>
+          </div>
+          
+          <div class="column" style="width:100%;">
+            <img src="portfolio/gghawh/coverfold.png" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+          </div>
+        </div>
+        
+      </div>
+      
     </div>
+    
+    
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+            
+            <div class="mySlides">
+              <img src="galleryimg/des3.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+              <img src="portfolio/gghawh/cover.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+              <img src="portfolio/gghawh/back.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+              <img src="portfolio/gghawh/innercover.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+              <img src="portfolio/gghawh/innerback.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+              <img src="portfolio/gghawh/coverfold.png" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+              <h3 id="caption"></h3>
+            </div>
+
+            <div class="column">
+              <img class="demo cursor" src="galleryimg/des3.png" style="width:100%" onclick="currentSlide(1)" alt="Poster">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="portfolio/gghawh/cover.png" style="width:100%" onclick="currentSlide(2)" alt="Front">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="portfolio/gghawh/back.png" style="width:100%" onclick="currentSlide(3)" alt="Back">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="portfolio/gghawh/innercover.png" style="width:100%" onclick="currentSlide(4)" alt="Inner front">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="portfolio/gghawh/innerback.png" style="width:100%" onclick="currentSlide(5)" alt="Inner back">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="portfolio/gghawh/coverfold.png" style="width:100%" onclick="currentSlide(6)" alt="Front (unfolded)">
+            </div>
+          </div>
+        </div>
+        
+        <script src="scripts/modal.js"></script>
     <!-- footer -->
     <footer>
       <img src="headergif/badge.png" alt="site badge">
