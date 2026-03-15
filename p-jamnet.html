@@ -5,6 +5,122 @@
     <title>portfolio</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
+    
+    <style>
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Create four equal columns that floats next to eachother */
+      .column {
+        float: left;
+        width: 50%;
+        margin-bottom: 1%;
+      }
+
+      /* The Modal (background) */
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-image: url(homeimg/SB036.JPG);
+      }
+
+      /* Modal Content */
+      .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        width: 50%;
+        max-width: 50%;
+      }
+
+      /* The Close Button */
+      .close {
+        color: black;
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 65px;
+        font-weight: bold;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #999;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      /* Hide the slides by default */
+      .mySlides {
+        display: none;
+      }
+
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-image: url(homeimg/SB036.JPG);
+      }
+
+      /* Caption text */
+      .caption-container {
+        text-align: center;
+        padding: 10px 16px;
+        background-color: rgb(220, 220, 230);
+      }
+
+      img.demo {
+        opacity: 0.6;
+      }
+
+      .active,
+      .demo:hover {
+        opacity: 1;
+      }
+
+      img.hover-shadow {
+        transition: 0.3s;
+      }
+
+      .hover-shadow:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+    </style>
   </head>
   <body>
     <!-- header -->
@@ -64,27 +180,130 @@
           </h3></a>
       </div>
       
-      <div class="main">
+      <div class="main" style="display:block">
         <div>
-          <img src="aboutimg/site.gif" alt="site" class="icon">
           <h2>
-            Under construction
-          </h2>
-          <h3>
+            Jam Network
             <br>
-            Check back soon :P
-          </h3>
-        </div>
-        <div>
-          <img src="aboutimg/sharks.gif" alt="another shark">
+          </h2>
+          <p>
+            JamNetwork is the University of Waterloo's very own music network, boasting bands from the school's 
+            own student body. The club frequently hosts events every school semester, from casual jams to full
+            on-stage concerts. It also hosts a plethora of sub-clubs, all related to connecting over or creating
+            music.
+          </p>
+        <h3>
+          Media, marketing, and design director (jan-apr 2026)
+        </h3>
+          <p>
+            As the MMD Director, my job is anything from designing posters to making calendars and casually 
+            posting on the <a href="https://instagram.com/jamnetwork_uw">Jam Network Instagram</a>!
+            Since JamNetwork already has some semblance of branding, I'm free to 
+            create any materials as long as they somewhat stick with it.
+          </p>
+          <img>
         </div>
       </div>
       
       <div class="main">
+        <div>
+          <img src="galleryimg/des4.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+        </div>
+        <div>
+          <img src="aboutimg/cd.gif" alt="cd" class="icon">
+          <h2>
+            Album concert
+          </h2>
+          <p>
+            Every semester, JamNetwork hosts a concert with 
+            a tracklist determined by a specific album. This
+            semester's album was Songs in the Key of Life by
+            Stevie Wonder.
+          </p>
+          <h3>
+            Development
+          </h3>
+          <p>
+            I wanted the poster to contrast JamNetwork's
+            blue and black branding by pulling a lot of orange 
+            and white into the poster. This album is a strong
+            deviation from the albums usually picked for the
+            concert, and I really wanted to express that.
+          </p>
+          <h3>
+            Success
+          </h3>
+          <p>
+            While definitely not entirely due to my poster, this
+            semester's album concert exceeded many others in both
+            attendance and profit. The concert itself garnered 
+            almost $1000 in ticket sales, and the bands that
+            played enjoyed a full house!
+          </p>
+        </div>
+        
+        <div>
+          <h2>
+            Jamboree
+          </h2>
+          <p>
+            Jamboree is JamNetwork's end-of-term concert 
+            that's "too special to be called an EOT concert".
+            Every semester, it's thrown with a different theme 
+            and a completely unique setlist. This semester's
+            theme is "A Decade Ago", drawing inspiration from
+            the 2016 (and the years surrounding) 
+            aesthetic.
+          </p>
+          <h3>
+            development
+          </h3>
+          <p>
+            The theme itself was ideated by my co-MMD 
+            director <a href="">Phoebe Yang</a>, and she graciously allowed 
+            me to create the promotional materials for 
+            Jamboree. I was given a <a href="https://pin.it/64rXGehp5">visual moodboard</a> and
+            free reign!
+          </p>
+        </div>
+        <div>
+          <img src="portfolio/jamnet/jamboreever1.jpg" onclick="openModal();currentSlide(2);" class="hover-shadow cursor" style="margin-bottom:10%">
+        </div>
         
       </div>
-      
     </div>
+    
+    <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+            
+            <div class="mySlides">
+              <img src="galleryimg/des4.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+              <img src="portfolio/jamnet/jamboreever1.jpg" style="width:100%">
+            </div>
+            
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+              <h3 id="caption"></h3>
+            </div>
+
+            <div class="column">
+              <img class="demo cursor" src="galleryimg/des4.jpg" style="width:100%" onclick="currentSlide(1)" alt="Album concert poster">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="portfolio/jamnet/jamboreever1.jpg" style="width:100%" onclick="currentSlide(2)" alt="Jamboree poster">
+            </div>
+          </div>
+        </div>
+    
+    <script src="scripts/modal.js"></script>
+    
     <!-- footer -->
     <footer>
       <img src="headergif/badge.png" alt="site badge">
