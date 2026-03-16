@@ -76,6 +76,7 @@ header {
   padding-top: 1%;
   background-color: rgb(220, 220, 230);
   outline: 3px dashed rgb(50, 50, 70);
+  z-index:100;
 }
 
 header h1, h2, h3 {
