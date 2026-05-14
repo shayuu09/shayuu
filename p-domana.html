@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css">
     
     <style>
-    .row:after {
+
+      .row:after {
         content: "";
         display: table;
         clear: both;
@@ -16,8 +17,8 @@
       /* Create four equal columns that floats next to eachother */
       .column {
         float: left;
-        width: 23%;
-        margin: 1%;
+        width: 50%;
+        margin-bottom: 1%;
       }
 
       /* The Modal (background) */
@@ -75,7 +76,7 @@
         width: auto;
         padding: 16px;
         margin-top: -50px;
-        color: black;
+        color: white;
         font-weight: bold;
         font-size: 20px;
         transition: 0.6s ease;
@@ -171,97 +172,59 @@
       <div id="title">
         <img src="headergif/shark.gif" alt="animated shark">
         <h1>
-          CoMICs
+          DomAnA
         </h1>
         <img src="headergif/shark.gif" alt="animated shark">
         <a href="portfolio.html"><h3>
-          To portfolio
+          <br>To portfolio
           </h3></a>
+      </div>
+      
+      <div class="main">
+        <div>
+          <img src="aboutimg/site.gif" alt="site" class="icon">
+          <h2>
+            Under construction
+          </h2>
+          <h3>
+            <br>
+            Check back soon :P
+          </h3>
+        </div>
+        <div>
+          <img src="aboutimg/sharks.gif" alt="another shark">
+        </div>
       </div>
       
       <div class="main" style="display:block">
         <div>
-        <img src="homeimg/news.gif" alt="site" class="icon">
-        <h2>
-          comics<br>
-        </h2>
-          <h3>
-            I love to draw!
-          </h3>
-        <p>
-          I've a long history of drawing. Before I was 
-          designing on photoshop, I was using ibisPaint X
-          religiously until I graduated to Procreate. And 
-          even before then, I would go to Dollarama every
-          six months and buy a new sketchbook. 
-          You best believe each and every one
-          was filled. <br>
-          Because of this, I also attended the CyberArts
-          program throughout secondary school. This not 
-          only gave me a leg up in fine arts, but it's
-          where I began properly designing.
-        </p>
-          <h3>
-            Constantly updating!
-          </h3>
+          <h2>
+            the project <br>
+          </h2>
           <p>
-            As I continue on into life, there'll be more opportunities to create short comics. Therefore, this page won't
-            be quite ever complete. Look forward to many more in the future! 
+            Alongside designers <a href="https://alexcportfolio.framer.website/
+">Alex Ciupac</a>, Vicky Nguyen, and <a href="https://bzportfolio.framer.website/">Belle Zhu</a>, we were prompted to identify, ideate, and
+            design solutions to problems affecting university students. As university students ourselves, surrounded by 
+            our peers, we were tasked with two milestones: our problem and our solution. <br>
+            One of the most exciting things about university is the diverse community and plethora of events. We 
+            wanted to design an app that is not only a hub for all sorts of events, but also allows a student to plan 
+            around academic commitments. The goal of the app is to improve the social lives of students, and have 
+            events/communities for any student.
           </p>
         </div>
       </div>
-      
-      <div class="main" style="display:block">
-        <img src="galleryimg/designs.gif" alt="site" class="icon">
-          <h2>
-            financial ruin
-          </h2>
-        <p>
-          One time I was pretty low on cash. Thankfully my friend stepped in!
-        </p>
-        <div class="row">
-          <div class="column">
-            <img src="portfolio/comics/fr/fr1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-          </div>
-          <div class="column">
-            <img src="portfolio/comics/fr/fr2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-          </div>
-          <div class="column">
-            <img src="portfolio/comics/fr/fr3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-          </div>
-          <div class="column">
-            <img src="portfolio/comics/fr/fr4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-          </div>
-          <div class="column">
-            <img src="portfolio/comics/fr/fr5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
-          </div>
-          <div class="column">
-            <img src="portfolio/comics/fr/fr6.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
-          </div>
-        </div>
     </div>
-
+    
     <div id="myModal" class="modal">
           <span class="close cursor" onclick="closeModal()">&times;</span>
           <div class="modal-content">
             
             <div class="mySlides">
-              <img src="portfolio/comics/fr/fr1.jpg" style="width:100%">
+              <img src="galleryimg/des4.jpg" style="width:100%">
             </div>
+            
             <div class="mySlides">
-              <img src="portfolio/comics/fr/fr2.jpg" style="width:100%">
-            </div>
-            <div class="mySlides">
-              <img src="portfolio/comics/fr/fr3.jpg" style="width:100%">
-            </div>
-            <div class="mySlides">
-              <img src="portfolio/comics/fr/fr4.jpg" style="width:100%">
-            </div>
-            <div class="mySlides">
-              <img src="portfolio/comics/fr/fr5.jpg" style="width:100%">
-            </div>
-            <div class="mySlides">
-              <img src="portfolio/comics/fr/fr6.jpg" style="width:100%">
+              <img src="portfolio/jamnet/jamboreever1.jpg" style="width:100%">
             </div>
             
 
@@ -273,30 +236,15 @@
             </div>
 
             <div class="column">
-              <img class="demo cursor" src="portfolio/comics/fr/fr1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Friend: &quotI know you're short on money, so I'll pay.&quot">
+              <img class="demo cursor" src="galleryimg/des4.jpg" style="width:100%" onclick="currentSlide(1)" alt="Album concert poster">
             </div>
             <div class="column">
-              <img class="demo cursor" src="portfolio/comics/fr/fr2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Friend: &quotIt's okay! Wait no-&quot">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="portfolio/comics/fr/fr3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Friend: &quotIt's fine, hey... Close your bank app.&quot">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="portfolio/comics/fr/fr4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Friend: &quotOh.&quot">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="portfolio/comics/fr/fr5.jpg" style="width:100%" onclick="currentSlide(5)" alt="">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="portfolio/comics/fr/fr6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Me: &quotThanks for paying.&quot <br> Friend: &quotI said it was fine...&quot">
+              <img class="demo cursor" src="portfolio/jamnet/jamboreever1.jpg" style="width:100%" onclick="currentSlide(2)" alt="Jamboree poster">
             </div>
           </div>
         </div>
-        
-        <script src="scripts/modal.js"></script>
-    </div>
     
-   
+    <script src="scripts/modal.js"></script>
     
     <!-- footer -->
     <footer>
