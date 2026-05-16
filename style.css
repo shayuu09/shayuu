@@ -68,6 +68,14 @@ ul {
   color: rgb(50, 50, 70);
 }
 
+ol {
+  font-family: informa;
+  font-size: 20px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  color: rgb(50, 50, 70);
+}
+
 a {
   color: rgb(80, 90, 120);
 }
