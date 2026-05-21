@@ -10,6 +10,12 @@
       .cd {
         margin-top: 2%;
         margin-right: -95px;
+        margin-bottom:2%;
+        border-radius: 50%;
+      }
+      
+      .cd:hover {
+        box-shadow: inset 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       }
       
       .tlist {
@@ -113,18 +119,31 @@
             recent listening!
           </h3>
         </div>
-        <div>
+        <div class="cbox">
+          <img src="musicimg/cd01.png" onclick="playMusic(1);updateAnim(1)" class="cd">
           <h3>
-            <a href="https://youtu.be/btjqZSqrXVI?si=bRS7tnp-WPeRnaxY">Goodbye 44th Music by condor44</a>
+            <a href="https://youtu.be/btjqZSqrXVI?si=bRS7tnp-WPeRnaxY"><br>Goodbye 44th Music by condor44</a>
+            <audio class="file" src="musicimg/gn44music.mp3"></audio>
           </h3>
           <p>
-            Truly poignant in nature and form, condor44 is 
-            most likely Japan's greatest post-punk act ever.
+            Truly poignant in nature and form, condor44 
+            is most likely Japan's greatest post-punk act 
+            ever. Maybe even greatest band ever.
+            <br> It starts energetic, then tones down enough
+            to hit with its truly cathartic fourth track,
+            which follows in the likes of condor44's 
+            other songs like 00203 and db. Then it 
+            brings a truly regretful goodbye for the 
+            band's guitarist, of whom the album was
+            created for.
+            <br><strong>Favourite track: goodnight 44th music</strong>
           </p>
         </div>
-        <div>
+        <div class="cbox">
+          <img src="musicimg/cd02.png" onclick="playMusic(2);updateAnim(2)" class="cd">
+          <audio class="file" src="musicimg/nyi.mp3"></audio>
           <h3>
-            <a href="https://carseatheadrest.bandcamp.com/album/twin-fantasy">Twin Fantasy by Car Seat Headrest</a>
+            <a href="https://carseatheadrest.bandcamp.com/album/twin-fantasy"><br>Twin Fantasy by Car Seat Headrest</a>
           </h3>
         </div>
       </div>
@@ -135,20 +154,19 @@
           faves
           <br>
         </h2>
-        <img src="musicimg/cd1.png" style="width:25%" onclick="playMusic(1);updateAnim(1)" class="cd">
+        <img src="musicimg/cd1.png" style="width:25%" onclick="playMusic(3);updateAnim(3)" class="cd">
         <audio class="file" src="musicimg/kinoue64.mp3"></audio>
-        <img src="musicimg/cd2.png" style="width:25%; position: relative; z-index:1" onclick="playMusic(2);updateAnim(2)" class="cd">
+        <img src="musicimg/cd2.png" style="width:25%; position: relative; z-index:1" onclick="playMusic(4);updateAnim(4)" class="cd">
         <audio class="file" src="musicimg/dazedtrek.mp3"></audio>
-        <img src="musicimg/cd3.png" style="width:25%; position: relative; z-index:2" onclick="playMusic(3);updateAnim(3)" class="cd">
+        <img src="musicimg/cd3.png" style="width:25%; position: relative; z-index:2" onclick="playMusic(5);updateAnim(5)" class="cd">
         <audio class="file" src="musicimg/hueof2.mp3"></audio>
-        <img src="musicimg/cd4.png" style="width:25%; position: relative; z-index:3" onclick="playMusic(4);updateAnim(4)" class="cd">
+        <img src="musicimg/cd4.png" style="width:25%; position: relative; z-index:3" onclick="playMusic(6);updateAnim(6)" class="cd">
         <audio class="file" src="musicimg/callthedogs.mp3"></audio>
-        <img src="musicimg/cd5.png" style="width:25%; position: relative; z-index:4" onclick="playMusic(5);updateAnim(5)" class="cd">
+        <img src="musicimg/cd5.png" style="width:25%; position: relative; z-index:4" onclick="playMusic(7);updateAnim(7)" class="cd">
         <audio class="file" src="musicimg/cooya.mp3"></audio>
-        <img src="musicimg/cd6.png" style="width:25%; position: relative; z-index:5" onclick="playMusic(6);updateAnim(6)" class="cd">
+        <img src="musicimg/cd6.png" style="width:25%; position: relative; z-index:5" onclick="playMusic(8);updateAnim(8)" class="cd">
         <audio class="file" src="musicimg/theophant.mp3"></audio>
 
-        <script src="scripts/audio.js"></script>
         <div>
           <h2>
             Tracklist
@@ -186,6 +204,7 @@
 
     </div>
 
+    <script src="scripts/audio.js"></script>
 
 
     <!-- footer -->
