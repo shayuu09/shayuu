@@ -5,6 +5,122 @@
     <title>portfolio</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
+    
+    <style>
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Create four equal columns that floats next to eachother */
+      .column {
+        float: left;
+        width: 30%;
+        margin: 1%;
+      }
+
+      /* The Modal (background) */
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 101;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-image: url(homeimg/SB036.JPG);
+      }
+
+      /* Modal Content */
+      .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        width: 50%;
+        max-width: 50%;
+      }
+
+      /* The Close Button */
+      .close {
+        color: black;
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 65px;
+        font-weight: bold;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #999;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      /* Hide the slides by default */
+      .mySlides {
+        display: none;
+      }
+
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-image: url(homeimg/SB036.JPG);
+      }
+
+      /* Caption text */
+      .caption-container {
+        text-align: center;
+        padding: 10px 16px;
+        background-color: rgb(220, 220, 230);
+      }
+
+      img.demo {
+        opacity: 0.6;
+      }
+
+      .active,
+      .demo:hover {
+        opacity: 1;
+      }
+
+      img.hover-shadow {
+        transition: 0.3s;
+      }
+
+      .hover-shadow:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+    </style>
   </head>
   <body>
     <!-- header -->
@@ -64,24 +180,9 @@
           </h3></a>
       </div>
       
-      <div class="main">
-        <div>
-          <img src="aboutimg/site.gif" alt="site" class="icon">
-          <h2>
-            Under construction
-          </h2>
-          <h3>
-            <br>
-            Check back soon :P
-          </h3>
-        </div>
-        <div>
-          <img src="aboutimg/sharks.gif" alt="another shark">
-        </div>
-      </div>
-      
     <div class="main">
       <div>
+        <img src="aboutimg/light-bulbs-24.gif" alt="icon" class="icon">
         <h2>
           Fashion for Change
         </h2>
@@ -110,18 +211,125 @@
           <br>Each designer was assigned a book to base their 
           designs off of, and I was given <em>The Alchemist</em> by
           Paulo Celho. The book is crafted as a beautiful
-          and simple story of following one's dreams.
+          and simple story of following one's dreams. Each 
+          model's design takes after a key concept or character
+          in the book.
+          <br> I'm grateful for having been assigned this book, as
+          after reading it as part of my research I felt a
+          newfound joy in my life. :)
         </p>
       </div>
       <div>
-        <img alt="done by timesnap photography" src="portfolio/fc/jimmy1.jpg">
+        <img alt="done by jimmy" src="portfolio/fc/jimmy1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
         <p>
           <em>Photo by <a href="https://www.instagram.com/notjiimmy">Jimmy</a></em>
         </p>
       </div>
+      
+      <div style="margin-top: -10%">
+        <img alt="by janine taha" src="portfolio/fc/fc2025.JPG" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+        <p>
+          <em>Photo by <a href="https://www.instagram.com/ninesques">Janine</a></em>
+        </p>
+      </div>
+      <div style="margin-top:-10%">
+        <h3>
+          And what happened last year (2025)?
+        </h3>
+        <p>
+          Last year's theme was "The Arcana", based on the
+          thirteen major arcana of a standard tarot deck!
+          It was my first year working with Fashion for
+          Change, and my first direct collaboration with
+          another designer.
+          <br>Each designer pair was given a group of arcana,
+          and we were assigned "Justice", "Judgement", and
+          "Temperance". We wanted each model to embody 
+          one of each arcana, but two models were assigned to
+          each designer. This meant our scene was left with
+          four total. As a solution, we decided to create a
+          fourth "character" for a model: 
+          "Humanity".
+          <br>Since this was my first year with the show, it 
+          didn't occur to me to document as often as I 
+          could have. Despite this, I think of this show and
+          the people I worked with very fondly. I especially
+          enjoyed working on this year's show as the 
+          proceeds went to <a href="https://www.oneroof.org/">oneROOF Youth Services</a>. I've 
+          gone through homelessness myself, so working on 
+          a show with a direct way to make a change was
+          well worth it. Working on the show also brought 
+          my creative spark back for design, during a time 
+          when I was burning out.
+          <br><br><br><br>
+        </p>
+      </div>
     </div>
       
+    <div class="main" style="display:block">
+        <img src="galleryimg/designs.gif" alt="site" class="icon">
+          <h2>
+            2026 Gallery
+          </h2>
+        <div class="row">
+          <div class="column">
+            <img src="portfolio/fc/timesnap1.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="portfolio/fc/timesnap2.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="portfolio/fc/maaz1.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+          </div>
+      </div>
     </div>
+    
+    <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+            <div class="mySlides">
+              <img src="portfolio/fc/jimmy1.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+              <img src="portfolio/fc/fc2025.JPG" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <img src="portfolio/fc/timesnap1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <img src="portfolio/fc/timesnap2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <img src="portfolio/fc/maaz1.jpg" style="width:100%">
+            </div>
+            
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+              <h3 id="caption"></h3>
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="portfolio/fc/jimmy1.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="portfolio/fc/fc2025.JPG" style="width:100%" onclick="currentSlide(2)" alt="">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="portfolio/fc/timesnap1.jpg" style="width:100%" onclick="currentSlide(3)" alt="By <a href=https://instagram.com/timesnap_photography>Areebah</a>">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="portfolio/fc/timesnap2.jpg" style="width:100%" onclick="currentSlide(4)" alt="By <a href=https://instagram.com/timesnap_photography>Areebah</a>">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="portfolio/fc/maaz1.jpg" style="width:100%" onclick="currentSlide(5)" alt="By <a href=https://instagram.com/maaz.archive>Maaz</a>">
+            </div>
+          </div>
+        </div>
+    
+    <script src="scripts/modal.js"></script>
     
     <!-- footer -->
     <footer>
