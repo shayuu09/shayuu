@@ -19,6 +19,7 @@ async function loadHTML(elementId, filePath) {
     } else {
       throw new Error(`Element with ID "${elementId}" not found`);
     }
+    
     // After inserting HTML, initialize dynamic elements
     if (elementId === 'header') {
       initHeaderEvents(); // Call a function to set up header interactions
@@ -26,7 +27,7 @@ async function loadHTML(elementId, filePath) {
   } catch (error) {
     console.error('Error loading content:', error);
     // Optional: Display a fallback message in the UI
-    document.getElementById(elementId)?.innerHTML = `<p>Error loading content.</p>`;
+    // document.getElementById(elementId)?.innerHTML = `<p>Error loading content.</p>`;
   }
 }
 
