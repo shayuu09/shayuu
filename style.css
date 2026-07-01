@@ -18,6 +18,16 @@
   src: url(fonts/fonnts.com-Informa_Pro.otf);
 }
 
+@font-face {
+  font-family: nova;
+  src: url(fonts/NOVABOLD.otf);
+}
+
+@font-face {
+  font-family: botttos;
+  src: url(fonts/botttos.ttf);
+}
+
 .center {
   display: block;
   margin-left: auto;
@@ -33,21 +43,21 @@ body {
 }
 
 h1 {
-  font-family: black-casper;
+  font-family: botttos;
   font-size: 50px;
   color: rgb(50, 50, 70);
 }
 
 h2 {
-  font-family: brands;
+  font-family: nova;
   font-size: 30px;
   letter-spacing: 1px;
   color: rgb(50, 50, 70);
 }
 
 h3 {
-  font-family: chantal;
-  font-size: 25px;
+  font-family: nova;
+  font-size: 20px;
   margin-top: 1%;
   color: rgb(50, 50, 70);
 }
