@@ -1,0 +1,33 @@
+:root {
+  --duo1: #f94a37;
+  --duo2: #c5eeca;
+}
+
+@font-face {
+  font-family: alagard;
+  src: url(alagard.ttf);
+}
+
+@font-face {
+  font-family: decal;
+  src: url(in-my-garden.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: auto;
+  width: 80%;
+  background-color: var(--duo1);
+  color: var(--duo2);
+}
+
+p {
+  font-family: alagard;
+}
+
+#decal {
+  font-family: decal;
+}

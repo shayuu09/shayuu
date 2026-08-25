@@ -27,7 +27,7 @@ async function loadHTML(elementId, filePath) {
   } catch (error) {
     console.error('Error loading content:', error);
     // Optional: Display a fallback message in the UI
-    // document.getElementById(elementId)?.innerHTML = `<p>Error loading content.</p>`;
+    //document.getElementById(elementId)?.innerHTML = `<p>Error loading content.</p>`;
   }
 }
 
@@ -43,6 +43,6 @@ function initHeaderEvents() {
 
 // Load header and footer when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
-  loadHTML('hfile', 'header.html'); // Load header into #header
-  loadHTML('ffile', 'footer.html'); // Load footer into #footer
+  loadHTML('hfile', 'header.html'); // Load header into #hfile
+  loadHTML('ffile', 'footer.html'); // Load footer into #ffile
 });
