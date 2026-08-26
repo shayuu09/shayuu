@@ -19,6 +19,7 @@ html {
 
 body {
   margin: auto;
+  width: 1000px;
   background-color: var(--duo1);
   color: var(--duo2);
   position: relative;
