@@ -6,12 +6,24 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <div id="heading"></div>
     
     <div id="cover"></div>
     
     <div id="content"></div>
     
     <script>
+      
+      fetch('heading.html')
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById('heading').innerHTML = html;
+        })
+        .catch(error => {
+          document.getElementById('heading').innerHTML = 'Error loading heading';
+          console.error('Error:', error);
+        });
+      
       fetch('cover.html')
         .then(response => response.text())
         .then(html => {
