@@ -22,12 +22,22 @@ body {
   width: 80%;
   background-color: var(--duo1);
   color: var(--duo2);
+  position: relative;
 }
 
 p {
   font-family: alagard;
+  font-size: 80px;
+  position: relative;
 }
 
 .decal {
   font-family: decal;
+}
+
+#heading {
+  margin-bottom: -150px;
+  position: sticky; top: 0px;
+  background: var(--duo1);
+  z-index: 2;
 }
