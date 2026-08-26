@@ -1,6 +1,8 @@
 :root {
   --duo1: #f94a37;
   --duo2: #c5eeca;
+  --home1: rgb(50, 50, 70);
+  --home2: rgb(220, 220, 230);
 }
 
 @font-face {
@@ -31,8 +33,25 @@ p {
   position: relative;
 }
 
+a {
+  text-decoration: none;
+  color: var(--duo2);
+}
+
 .decal {
   font-family: decal;
+}
+
+#hroute {
+  transition: 0.4s ease-out;
+  padding: 1% 2% 1% 2%;
+  border-radius: 50%;
+}
+
+#hroute:hover {
+  transition: 0.4s ease-out;
+  color: var(--home1);
+  background-color: var(--home2);
 }
 
 #heading {

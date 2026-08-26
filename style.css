@@ -28,6 +28,11 @@
   src: url(fonts/botttos.ttf);
 }
 
+@font-face {
+  font-family: alagard;
+  src: url(hidden/alagard.ttf);
+}
+
 .center {
   display: block;
   margin-left: auto;
@@ -261,4 +266,29 @@ footer h2 {
 
 footer h1, h2, h3 {
   display: inline;
+}
+
+#hidden {
+  transition: 0.4s ease-out;
+  background-color: none;
+}
+
+#hidden:hover {
+  transition: 0.4s ease-out;
+}
+
+#hidden a {
+  margin-left: 400px;
+  text-decoration: none;
+  transition: 0.4s ease-out;
+  background-image: none;
+}
+
+#hidden:hover h3{
+  font-family: alagard;
+  color: #c5eeca;
+  transition: 0.4s ease-out;
+  background-color: #f94a37;
+  border-radius: 50%;
+  padding: 6% 3% 6% 3%;
 }
