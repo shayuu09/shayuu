@@ -17,7 +17,6 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: white;
 }
 
 body {
@@ -72,13 +71,12 @@ a {
 }
 
 #heading {
-  margin-top: -20%;
-  margin-bottom: 5%;
   position: sticky; top: 0px;
   background: var(--duo1);
   z-index: 2;
 }
 
 #cover {
+  margin-top: -10%;
   margin-left: 5%;
 }
