@@ -32,7 +32,7 @@ body {
   cursor: none;
 }
 
-p {
+h1 {
   font-family: alagard;
   font-size: 80px;
   position: relative;
@@ -55,6 +55,17 @@ a {
   transition: 0.2s ease-out;
   scale: 0.9;
   z-index: 1000;
+  mix-blend-mode: difference;
+}
+
+.hoverable {
+  transition: 0.4s ease-out;
+  padding: 1.3% 2% 1.3% 2%;
+  border-radius: 50%;
+}
+
+.hoverable:hover {
+  transition: 0.4s ease-out;
   mix-blend-mode: difference;
 }
 
