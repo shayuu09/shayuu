@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <title>hello</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/TweenMax.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
   </head>
   <body>
-    <svg height="30" width="30" id="cursor">
-      <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+    <svg id="cursor" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M6.71726e-07 -6.71727e-07C6.71726e-07 -6.71727e-07 28 24.7449 40.5407 24.7449C51.3288 24.7449 69.52 9.72747 69.52 9.72747C69.52 9.72747 51.379 27.3324 54.6128 38.8171C61 61.5 99.2766 99.3884 99.2766 99.3884C99.2766 99.3884 65 67 40.5407 54.1129C29.985 48.5512 10.2275 69.02 10.2275 69.02C10.2275 69.02 24.6331 49.6051 24.6331 38.8171C24.6331 27.5 6.71726e-07 -6.71727e-07 6.71726e-07 -6.71727e-07Z" fill="white" />
     </svg>
     <div id="heading"></div>
     <div id="cover"></div>
     <div id="content"></div>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
       fetch('heading.html')
         .then(response => response.text())
@@ -44,16 +47,25 @@
           console.error('Error:', error);
         });
     </script>
-    
-    
-<script>
-$(document).mousemove(function(e) {
-  // Directly update position on each mousemove
-  $('#cursor').css({
-    left: e.clientX,
-    top: e.clientY
-  });
-});
-</script>
+
+
+    <script>
+      const $cursor = document.querySelector('#cursor');
+      document.body.addEventListener('mousemove', onMouseMove);
+      for (let i = 0; i < $hoverables.length; i++) {
+        if (window.CP.shouldStopExecution(0)) break;
+        $hoverables[i].addEventListener("mouseenter", onMouseHover);
+        $hoverables[i].addEventListener("mouseleave", onMouseHoverOut);
+      }
+      // Move the cursor
+      window.CP.exitedLoop(0);
+
+      function onMouseMove (e) {
+        TweenMax.to($cursor, 0.1, {
+          x: e.pageX,
+          y: e.pageY
+        });
+      }
+    </script>
   </body>
 </html>

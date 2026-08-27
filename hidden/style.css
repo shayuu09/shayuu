@@ -21,10 +21,14 @@ html {
 
 body {
   margin: auto;
-  width: 1000px;
   background-color: var(--duo1);
   color: var(--duo2);
   position: relative;
+  cursor: none;
+}
+
+:hover {
+  cursor: none;
 }
 
 p {
@@ -44,11 +48,10 @@ a {
 
 #cursor {
   position: absolute;
-  top:0;
-  left:0;
   fill: white;
   transition: 0.2s ease-out;
-  z-index: 2;
+  scale: 0.9;
+  z-index: 1000;
   mix-blend-mode: difference;
 }
 
@@ -65,7 +68,12 @@ a {
 }
 
 #heading {
-  margin-bottom: -150px;
+  margin-bottom: -10%;
   position: sticky; top: 0px;
   background: var(--duo1);
+  z-index: 2;
+}
+
+#cover {
+  margin-left: 5%;
 }
