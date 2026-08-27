@@ -17,10 +17,12 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: white;
 }
 
 body {
   margin: auto;
+  min-height: auto;
   background-color: var(--duo1);
   color: var(--duo2);
   position: relative;
@@ -68,7 +70,8 @@ a {
 }
 
 #heading {
-  margin-bottom: -10%;
+  margin-top: -10%;
+  margin-bottom: 0%;
   position: sticky; top: 0px;
   background: var(--duo1);
   z-index: 2;

@@ -13,40 +13,52 @@
     <svg id="cursor" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M6.71726e-07 -6.71727e-07C6.71726e-07 -6.71727e-07 28 24.7449 40.5407 24.7449C51.3288 24.7449 69.52 9.72747 69.52 9.72747C69.52 9.72747 51.379 27.3324 54.6128 38.8171C61 61.5 99.2766 99.3884 99.2766 99.3884C99.2766 99.3884 65 67 40.5407 54.1129C29.985 48.5512 10.2275 69.02 10.2275 69.02C10.2275 69.02 24.6331 49.6051 24.6331 38.8171C24.6331 27.5 6.71726e-07 -6.71727e-07 6.71726e-07 -6.71727e-07Z" fill="white" />
     </svg>
-    <div id="heading"></div>
-    <div id="cover"></div>
-    <div id="content"></div>
-    <script>
-      fetch('heading.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('heading').innerHTML = html;
-        })
-        .catch(error => {
-          document.getElementById('heading').innerHTML = 'Error loading heading';
-          console.error('Error:', error);
-        });
+    <div id="heading">
+      <p class="decal hoverable" style="
+      position: relative;
+      font-size: 150px;
+      text-align: center;">
+        <a href="https://shayuu09.ca/index.html" id="hroute">p</a>
+      </p>
+    </div>
+    <div id="cover">
+      <p class="decal" style="
+      top: -50%; 
+      left: 75%;
+      position: absolute;
+      font-size: 700px;">
+        n
+      </p>
 
-      fetch('cover.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('cover').innerHTML = html;
-        })
-        .catch(error => {
-          document.getElementById('cover').innerHTML = 'Error loading cover';
-          console.error('Error:', error);
-        });
+      <p style="left: 10%">
+        i remember
+      </p>
 
-      fetch('content.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('content').innerHTML = html;
-        })
-        .catch(error => {
-          document.getElementById('content').innerHTML = 'Error loading content';
-          console.error('Error:', error);
-        });
-    </script>
+      <p style="top: 8%; left: 25%">
+        what was said
+      </p>
+
+      <p style="left: 10%">
+        in an empty church
+      </p>
+
+      <p style="left: 30%">
+        and an empty grave
+      </p>
+
+      <p class="decal" style="
+      margin-top: -5%;
+      margin-left: 50%;
+      margin-right: 50%;
+      font-size: 200px;">
+        k
+      </p>
+    </div>
+    <div id="content">
+    <p>
+      good morning and forgive me
+      </p>
+    </div>
 
 
     <script>
@@ -62,8 +74,8 @@
 
       function onMouseMove (e) {
         TweenMax.to($cursor, 0.1, {
-          x: e.pageX,
-          y: e.pageY
+          x: e.clientX,
+          y: e.clientY + 100
         });
       }
     </script>
