@@ -44,11 +44,11 @@ a {
 
 #cursor {
   position: absolute;
-  scale: 0.5;
-  z-index: 100;
-}
-
-#star {
+  top:0;
+  left:0;
+  fill: white;
+  transition: 0.2s ease-out;
+  z-index: 2;
   mix-blend-mode: difference;
 }
 
@@ -68,5 +68,4 @@ a {
   margin-bottom: -150px;
   position: sticky; top: 0px;
   background: var(--duo1);
-  z-index: 2;
 }
