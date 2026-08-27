@@ -38,6 +38,11 @@ h1 {
   position: relative;
 }
 
+h2 {
+  font-family: alagard;
+  font-size: 40;
+}
+
 a {
   text-decoration: none;
   color: var(--duo2);
@@ -89,4 +94,8 @@ a {
 
 #cover {
   margin-left: 5%;
+}
+
+#content {
+  margin: 5%;
 }
