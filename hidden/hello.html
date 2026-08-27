@@ -19,7 +19,7 @@
     <div id="heading"></div>
     <div id="cover"></div>
     <div id="content"></div>
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
       fetch('heading.html')
         .then(response => response.text())
@@ -50,18 +50,17 @@
           document.getElementById('content').innerHTML = 'Error loading content';
           console.error('Error:', error);
         });
-      const move = document.getElementById("cursor");
-
-document.body.onpointermove = event => {
-    const { clientX, clientY } = event;
-
-    move.animate({
-        left: `${clientX}px`,
-        top: `${clientY}px`
-    
-    }, {duration: 1000, fill: "forwards"})
-
-}
     </script>
+    
+    
+<script>
+$(document).mousemove(function(e) {
+  // Directly update position on each mousemove
+  $('#cursor').css({
+    left: e.clientX,
+    top: e.clientY
+  });
+});
+</script>
   </body>
 </html>
