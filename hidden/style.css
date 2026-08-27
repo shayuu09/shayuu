@@ -49,7 +49,9 @@ a {
 }
 
 #cursor {
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
   fill: white;
   transition: 0.2s ease-out;
   scale: 0.9;
@@ -70,8 +72,8 @@ a {
 }
 
 #heading {
-  margin-top: -10%;
-  margin-bottom: 0%;
+  margin-top: -20%;
+  margin-bottom: 5%;
   position: sticky; top: 0px;
   background: var(--duo1);
   z-index: 2;
