@@ -6,12 +6,21 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <div id="cursor">
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 2000 2000">
+        <g>
+          <g fill="hsl(0, 0%, 100%)" id="star" transform="matrix(0.838670567945424,0.5446390350150271,-0.5446390350150271,0.838670567945424,682.4605838370038,-654.137003700564)">
+            <path d="M 500 500 C 1000 1000 1000 1000 1300 750 C 1000 1000 1000 1000 2000 2000 C 1000 1000 1000 1000 750 1300 C 1000 1000 1000 1000 500 500" stroke-linecap="round" stroke-linejoin="round">
+            </path>
+          </g>
+        </g>
+      </svg>
+    </div>
     <div id="heading"></div>
     <div id="cover"></div>
     <div id="content"></div>
-    
+
     <script>
-      
       fetch('heading.html')
         .then(response => response.text())
         .then(html => {
@@ -21,7 +30,7 @@
           document.getElementById('heading').innerHTML = 'Error loading heading';
           console.error('Error:', error);
         });
-      
+
       fetch('cover.html')
         .then(response => response.text())
         .then(html => {
@@ -31,7 +40,7 @@
           document.getElementById('cover').innerHTML = 'Error loading cover';
           console.error('Error:', error);
         });
-      
+
       fetch('content.html')
         .then(response => response.text())
         .then(html => {
@@ -41,6 +50,18 @@
           document.getElementById('content').innerHTML = 'Error loading content';
           console.error('Error:', error);
         });
-   </script>
+      const move = document.getElementById("cursor");
+
+document.body.onpointermove = event => {
+    const { clientX, clientY } = event;
+
+    move.animate({
+        left: `${clientX}px`,
+        top: `${clientY}px`
+    
+    }, {duration: 1000, fill: "forwards"})
+
+}
+    </script>
   </body>
 </html>
