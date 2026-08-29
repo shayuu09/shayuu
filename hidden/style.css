@@ -36,6 +36,7 @@ h1 {
   font-family: alagard;
   font-size: 80px;
   position: relative;
+  width: 60%;
 }
 
 h2 {
@@ -87,7 +88,8 @@ a {
 }
 
 #heading {
-  position: sticky; top: 0px;
+  position: sticky; 
+  top: 0px;
   background: var(--duo1);
   z-index: 2;
 }
