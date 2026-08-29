@@ -16,9 +16,8 @@
     </svg>
   </head>
   <body>
-    <p id="coord" style="position:fixed; left:50px; top:0px; z-index: 100">
-      s
-    </p>
+    <!-- <p id="coord" style="position:fixed; left:50px; top:0px; z-index: 100"> -->
+
     <div id="heading">
       <p class="decal" style="
       position: relative;
@@ -31,7 +30,7 @@
     </div>
     <div id="cover">
       <p class="decal" style="
-      top: -60%; 
+      top: -30%; 
       left: 75%;
       position: absolute;
       font-size: 700px;">
@@ -76,7 +75,20 @@
       <h2>
         good morning and forgive me
       </h2>
-      <img class="image" style="width: 50%" src="doctor.png" alt="collection of items related to doctor doctor this city's sick by the hue of two">
+      <div class="grid">
+        <div style="display: grid">
+          <div class="image"> </div>
+          <img class="imageinner" style="width: 100%" src="doctor.png" alt="collection of items related to doctor doctor this city's sick by the hue of two">
+        </div>
+        <div>
+          <h2>
+            doctor, doctor! this city's sick!
+          </h2>
+          <p>
+
+          </p>
+        </div>
+      </div>
     </div>
 
     <script>
@@ -101,27 +113,39 @@
           x: e.clientX,
           y: e.clientY
         });
-        
+        TweenMax.to($spotlight, 0.05, {
+          x: e.clientX - 50,
+          y: e.clientY - 50
+        });
+
         $("#coord").first().text(e.clientX + ", " + e.clientY + ", " + inBound);
-        
+
       }
 
 
-      function onMouseHover (e) {
+      function onMouseHover () {
         TweenMax.to($spotlight, 0.3, {
           opacity: 100,
-          scale: 6
+          scale: 5
         });
-        
+
+        $("#cursor").css({
+          "display": "none"
+        });
+
         inBound = true;
       }
 
       function onMouseHoverOut () {
         TweenMax.to($spotlight, 0.3, {
           opacity: 0,
-          scale: 1
+          scale: 0
         });
-        
+
+        $("#cursor").css({
+          "display": "inline"
+        });
+
         inBound = false;
       }
     </script>
