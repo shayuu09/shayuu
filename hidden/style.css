@@ -55,13 +55,31 @@ a {
 
 #cursor {
   position: fixed;
-  top: 0;
-  left: 0;
   fill: white;
   transition: 0.2s ease-out;
   scale: 0.9;
   z-index: 1000;
   mix-blend-mode: difference;
+}
+
+#spotlight {
+  position: fixed;
+  fill: white;
+  mix-blend-mode: difference;
+  z-index: 1;
+  transition: 0.2s ease-out;
+}
+
+.image {
+  background-color: none;
+  border-radius: 50%;
+  transition: 0.2s ease-out;
+}
+
+.image:hover {
+  background-color: white;
+  mix-blend-mode: difference;
+  transition: 0.2s ease-out;
 }
 
 .hoverable {
@@ -74,6 +92,7 @@ a {
   transition: 0.4s ease-out;
   mix-blend-mode: difference;
 }
+
 
 #hroute {
   transition: 0.4s ease-out;
