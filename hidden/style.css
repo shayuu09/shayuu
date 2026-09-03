@@ -89,9 +89,17 @@ a {
 
 .grid {
   display: grid;
-  grid-template-columns: auto auto;
 }
 
+.grid.left {
+  grid-template-columns: 39% 60%;
+  gap: 1%;
+}
+
+.grid.right {
+  grid-template-columns: 60% 39%;
+  gap: 1%;
+}
 
 #hroute {
   transition: 0.4s ease-out;
