@@ -11,6 +11,11 @@
 }
 
 @font-face {
+  font-family: vga;
+  src: url(vga.ttf);
+}
+
+@font-face {
   font-family: decal;
   src: url(in-my-garden.ttf);
 }
@@ -41,7 +46,12 @@ h1 {
 
 h2 {
   font-family: alagard;
-  font-size: 40;
+  font-size: 40px;
+}
+
+p {
+  font-family: vga;
+  font-size: 25px;
 }
 
 a {
@@ -93,12 +103,12 @@ a {
 
 .grid.left {
   grid-template-columns: 39% 60%;
-  gap: 1%;
+  gap: 3%;
 }
 
 .grid.right {
   grid-template-columns: 60% 39%;
-  gap: 1%;
+  gap: 3%;
 }
 
 #hroute {
