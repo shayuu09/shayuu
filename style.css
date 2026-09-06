@@ -110,8 +110,8 @@ header {
 
 #hfile {
   position: sticky;
-  z-index:100;
-  top:0;
+  z-index: 100;
+  top: 0;
 }
 
 header h1, h2, h3 {
@@ -200,6 +200,10 @@ nav a {
 
 .main .icon {
   width: 25px;
+}
+
+#title .smallericon {
+  width: 20px;
 }
 
 /* From w3schools */

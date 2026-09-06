@@ -5,9 +5,8 @@
     <title>portfolio</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
-    
-    <style>
 
+    <style>
       .row:after {
         content: "";
         display: table;
@@ -118,11 +117,6 @@
       }
 
       .hover-shadow {
-        box-shadow: 15px 20px rgb(220, 220, 230);
-        border-inline: 3px dashed rgb(220, 220, 230);
-      }
-      
-      .hover-shadow {
         box-shadow: 15px 20px rgb(220, 220, 230, 0);
         border: 3px dashed rgb(220, 220, 230);
       }
@@ -144,11 +138,28 @@
           CD CASE DeSIgN
         </h1>
         <img src="headergif/shark.gif" alt="animated shark">
-        <a href="portfolio.html"><h3>
-          To portfolio
-          </h3></a>
+        <a href="portfolio.html">
+          <h3>
+            To portfolio
+          </h3>
+        </a>
+        <br>
+        <div>
+          <img alt="clock" class="smallericon" src="homeimg/clock.gif">
+          <h3>
+            2 days
+          </h3>
+          <img alt="book" class="smallericon" src="aboutimg/book.gif">
+          <h3>
+            personal
+          </h3>
+          <img alt="computer" class="smallericon" src="aboutimg/computer-0071.gif">
+          <h3>
+            figma
+          </h3>
+        </div>
       </div>
-      
+
       <div class="main">
         <div>
           <img alt="cd" class="icon" src="aboutimg/cd.gif">
@@ -163,8 +174,8 @@
             <a href="https://sunispoison.bandcamp.com/album/god-gave-him-a-wolfs-heart-outtakes-2022">
               God Gave Him A Wolf's Heart
             </a>
-            by sun is poison is 
-            probably one of (if not) my favourite albums in 
+            by sun is poison is
+            probably one of (if not) my favourite albums in
             the world, but there are no physical copies of it in
             existence. I designed this version to imagine what a
             CD case for the album would look like. This is not an
@@ -175,7 +186,7 @@
           </h3>
           <p>
             One issue I ran into was the actual visuals on the
-            case: did I want to keep the original cover image 
+            case: did I want to keep the original cover image
             or did I want to make my own? I decided to "hide"
             the original image in several parts of the design,
             see if you can spot it!
@@ -192,7 +203,7 @@
           <p>
             To add that final flair, I added in the lyrics of
             each song onto each portion of the design. I used
-            a font called "Redacted Script" to achieve the 
+            a font called "Redacted Script" to achieve the
             effect of small cursive.
             <br>
             Overall, I'm pretty proud!
@@ -206,19 +217,19 @@
         <div>
           <img alt="inner poster" src="galleryimg/des3.png" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
           <p>
-            <em>Inner poster that comes with the jewel case. This 
-              would be on the flip side of the cover itself, which 
+            <em>Inner poster that comes with the jewel case. This
+              would be on the flip side of the cover itself, which
               would be folded and act as the cover.</em>
           </p>
         </div>
       </div>
-      
+
       <div class="main" style="display:inline-block">
         <div class="row">
           <div>
-          <h3>
-            outer covers
-          </h3>
+            <h3>
+              outer covers
+            </h3>
           </div>
           <div class="column">
             <img src="portfolio/gghawh/cover.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
@@ -228,10 +239,10 @@
           </div>
           <div>
             <h3>
-            Inner covers
-          </h3>
+              Inner covers
+            </h3>
           </div>
-          
+
           <div class="column">
             <img src="portfolio/gghawh/innercover.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
           </div>
@@ -240,77 +251,77 @@
           </div>
           <div>
             <h3>
-            Cover unfolded
-          </h3>
+              Cover unfolded
+            </h3>
           </div>
-          
+
           <div class="column" style="width:100%;">
             <img src="portfolio/gghawh/coverfold.png" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
           </div>
         </div>
-        
+
       </div>
-      
+
     </div>
-    
-    
-        <div id="myModal" class="modal">
-          <span class="close cursor" onclick="closeModal()">&times;</span>
-          <div class="modal-content">
-            
-            <div class="mySlides">
-              <img src="galleryimg/des3.png" style="width:100%">
-            </div>
-            
-            <div class="mySlides">
-              <img src="portfolio/gghawh/cover.png" style="width:100%">
-            </div>
-            
-            <div class="mySlides">
-              <img src="portfolio/gghawh/back.png" style="width:100%">
-            </div>
-            
-            <div class="mySlides">
-              <img src="portfolio/gghawh/innercover.png" style="width:100%">
-            </div>
-            
-            <div class="mySlides">
-              <img src="portfolio/gghawh/innerback.png" style="width:100%">
-            </div>
-            
-            <div class="mySlides">
-              <img src="portfolio/gghawh/coverfold.png" style="width:100%">
-            </div>
 
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-            <div class="caption-container">
-              <h3 id="caption"></h3>
-            </div>
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
 
-            <div class="column">
-              <img class="demo cursor" src="galleryimg/des3.png" style="width:100%" onclick="currentSlide(1)" alt="Poster">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="portfolio/gghawh/cover.png" style="width:100%" onclick="currentSlide(2)" alt="Front">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="portfolio/gghawh/back.png" style="width:100%" onclick="currentSlide(3)" alt="Back">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="portfolio/gghawh/innercover.png" style="width:100%" onclick="currentSlide(4)" alt="Inner front">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="portfolio/gghawh/innerback.png" style="width:100%" onclick="currentSlide(5)" alt="Inner back">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="portfolio/gghawh/coverfold.png" style="width:100%" onclick="currentSlide(6)" alt="Front (unfolded)">
-            </div>
-          </div>
+        <div class="mySlides">
+          <img src="galleryimg/des3.png" style="width:100%">
         </div>
-        
-        <script src="scripts/modal.js"></script>
+
+        <div class="mySlides">
+          <img src="portfolio/gghawh/cover.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <img src="portfolio/gghawh/back.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <img src="portfolio/gghawh/innercover.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <img src="portfolio/gghawh/innerback.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <img src="portfolio/gghawh/coverfold.png" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="caption-container">
+          <h3 id="caption"></h3>
+        </div>
+
+        <div class="column">
+          <img class="demo cursor" src="galleryimg/des3.png" style="width:100%" onclick="currentSlide(1)" alt="Poster">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="portfolio/gghawh/cover.png" style="width:100%" onclick="currentSlide(2)" alt="Front">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="portfolio/gghawh/back.png" style="width:100%" onclick="currentSlide(3)" alt="Back">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="portfolio/gghawh/innercover.png" style="width:100%" onclick="currentSlide(4)" alt="Inner front">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="portfolio/gghawh/innerback.png" style="width:100%" onclick="currentSlide(5)" alt="Inner back">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="portfolio/gghawh/coverfold.png" style="width:100%" onclick="currentSlide(6)" alt="Front (unfolded)">
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/modal.js"></script>
     <!-- footer -->
     <div id="ffile"></div>
 
