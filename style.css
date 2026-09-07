@@ -413,10 +413,10 @@ img.hover-shadow {
 
 .hover-shadow {
   box-shadow: 15px 20px rgb(220, 220, 230, 0);
-  border: 3px dashed rgb(220, 220, 230);
+  border: 3px dashed rgb(220, 220, 230, 0);
 }
 
 .hover-shadow:hover {
-  box-shadow: 15px 20px rgb(180, 190, 220, 0);
+  box-shadow: 15px 20px rgb(180, 190, 220);
   border: 3px dashed rgb(50, 50, 70);
 }
